@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News App</title>
+
+    <link rel="shortcut icon" href="./Assests/logo.png" type="image/x-icon">k
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-container">
+
+            <a href="#" onclick="reload()" class="logo">
+                <img src="./Assests/logo.png" alt="logo">
+            </a>
+
+            <div class="nav-links">
+                <ul>
+                    <li class="nav-items" id="ipl" onclick="onNavItemClick('ipl')">Sports</li>
+                    <li class="nav-items" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                    <li class="nav-items" id="technology" onclick="onNavItemClick('technology')">Technology</li>
+                </ul>
+            </div>
+
+            <div class="nav-search-bar">
+                <input type="text" class="search-txt" id="search-txt" placeholder="Search News">
+                <button class="search-btn" id="search-btn">Search</button>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="cards-container" id="cards-container">
+
+        </div>
+    </main>
+
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img alt="image" id="news-image">
+            </div>
+            <div class="card-content">
+                <h3 class="news-title">This is card title</h3>
+                <h6 class="news-source">360gadget 11-11-2024</h6>
+                <p class="news-desc">
+                    Corrupti earum sed molestiae natus. Debitis corporis fugiat quia maiores dolores, laboriosam cum
+                    qui ratione veniam obcaecati! Vel numquam cupiditate ut esse voluptas dolores autem quisquam
+                    temporibus adipisci, recusandae quos.
+            </div>
+        </div>
+    </template>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
