@@ -79,6 +79,3 @@ searchTxt.addEventListener("keydown", (event) => {
         currSelectedNav = null;
     }
 });
-() => {
-    console.log("vishal kumar khatri");
-}
