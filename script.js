@@ -1,6 +1,3 @@
-const APIKey = "50b3bae9449742959876b6dc7b9110f9";
-const APIUrl = "https://newsapi.org/v2/everything?q=";
-
 const newsCardTemplate = document.getElementById("template-news-card");
 const cardsContainer = document.getElementById("cards-container");
 
@@ -12,6 +9,9 @@ window.addEventListener('load', () => fetchNews("India"));
 function reload() {
     window.location.reload();
 }
+
+const APIKey = "50b3bae9449742959876b6dc7b9110f9";
+const APIUrl = "https://newsapi.org/v2/everything?q=";
 
 async function fetchNews(query) {
     const res = await fetch(`${APIUrl}${query}&apiKey=${APIKey}`);
