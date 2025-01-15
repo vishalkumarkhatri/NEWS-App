@@ -10,7 +10,7 @@ function reload() {
     window.location.reload();
 }
 
-const APIKey = "50b3bae9449742959876b6dc7b9110f9";
+const APIKey = "";
 const APIUrl = "https://newsapi.org/v2/everything?q=";
 
 async function fetchNews(query) {
